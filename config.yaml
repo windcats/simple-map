@@ -1,0 +1,17 @@
+port: 8080
+
+sources:
+   # 第二个源：带主题的目录
+  - name: "blue" # 在 URL 中使用的源名称
+    type: "dir" # 新的类型
+    path: "F:\\maps\\ttt" # 主题目录的根路径
+
+  # 第一个源：MBTiles 文件（保持不变）
+  - name: "world_mbtiles"
+    type: "mbtiles"
+    path: "./my_map.mbtiles"
+
+  # 第二个源：带主题的目录
+  - name: "black" # 在 URL 中使用的源名称
+    type: "dir" # 新的类型
+    path: "./black" # 主题目录的根路径
